@@ -56,9 +56,13 @@ namespace Vectors
 
                     vc.Calculate();
 
-                    Console.WriteLine(string.Format("Orthogonal Vector : {0:F2} {1:F2} {2:F2}", vc.W.X, vc.W.Y, vc.W.Z));
-
+                    Console.WriteLine(string.Format("Length of U : {0:F2}", vc.U.Length));
+                    Console.WriteLine(string.Format("Length of V : {0:F2}", vc.V.Length));
+                    
                     Console.WriteLine(string.Format("Angle between U and V : {0:F3}", vc.Angle));
+
+                    Console.WriteLine(string.Format("Orthogonal Vector (W) : {0:F2} {1:F2} {2:F2}", vc.W.X, vc.W.Y, vc.W.Z));
+                    Console.WriteLine(string.Format("Length of W : {0:F2}", vc.W.Length));
 
                 }
                 catch (System.Exception ex)
