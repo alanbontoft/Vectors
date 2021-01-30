@@ -36,7 +36,6 @@ namespace Vectors
         static void Main(string[] args)
         {
             var vc = new VectorClass();
-            Vector3D w;
             double[] data;
             
             while(true)
